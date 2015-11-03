@@ -181,7 +181,7 @@
                 <Column editable="true" title="       NOMBRES" type="java.lang.Object"/>
                 <Column editable="true" title="       APELLIDOS" type="java.lang.Object"/>
                 <Column editable="true" title="    ESTADO_CIVIL" type="java.lang.Object"/>
-                <Column editable="true" title="  DIRECCION_ACTUAL" type="java.lang.Object"/>
+                <Column editable="true" title="         DIA" type="java.lang.Object"/>
                 <Column editable="true" title="        E_MAIL" type="java.lang.Object"/>
                 <Column editable="true" title="       TELEFONO" type="java.lang.Object"/>
                 <Column editable="true" title="        EDAD" type="java.lang.Object"/>

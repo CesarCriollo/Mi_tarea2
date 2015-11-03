@@ -106,7 +106,7 @@ public class FrmMantenimientoEmpleado extends javax.swing.JFrame {
 
             },
             new String [] {
-                "            ID", "       NOMBRES", "       APELLIDOS", "    ESTADO_CIVIL", "  DIRECCION_ACTUAL", "        E_MAIL", "       TELEFONO", "        EDAD"
+                "            ID", "       NOMBRES", "       APELLIDOS", "    ESTADO_CIVIL", "         DIA", "        E_MAIL", "       TELEFONO", "        EDAD"
             }
         ));
         jspResultado.setViewportView(tbResultado);
@@ -302,10 +302,10 @@ public class FrmMantenimientoEmpleado extends javax.swing.JFrame {
                             resultado.add(registros.get(i));
                         }
                     }
-                    }else if(tipo.equals("DIRECCION_ACTUAL")){
+                    }else if(tipo.equals("DIA")){
                 
                     for (int i = 0; i < registros.size(); i++) {
-                        if(registros.get(i).getDireccion_actual().toUpperCase().contains(descripcion.toUpperCase()) ){
+                        if(registros.get(i).getDia().toUpperCase().contains(descripcion.toUpperCase()) ){
                             resultado.add(registros.get(i));
                         }
                     }
@@ -343,7 +343,7 @@ public class FrmMantenimientoEmpleado extends javax.swing.JFrame {
                     fila.add(resultado.get(i).getNombres());
                     fila.add(resultado.get(i).getApellidos());
                     fila.add(resultado.get(i).getEstado_civil());
-                    fila.add(resultado.get(i).getDireccion_actual());
+                    fila.add(resultado.get(i).getDia());
                     fila.add(resultado.get(i).getE_mail());
                     fila.add(resultado.get(i).getTelefono());      
                     fila.add(resultado.get(i).getEdad());

@@ -64,7 +64,7 @@ FrmMantenimientoEmpleado frm;
         tfNombres.setText(e.getNombres());
         tfApellidos.setText(e.getApellidos());
         cbxestado_civil.setSelectedItem(e.getEstado_civil());
-                tfDireccion_Actual.setText(e.getDireccion_actual());
+                tfDia.setText(e.getDia());
                 tfE_Mail.setText(e.getE_mail());
                 tfTelefono.setText(e.getTelefono());
         
@@ -76,7 +76,7 @@ FrmMantenimientoEmpleado frm;
            tfNombres.getText().equals("") ||
            tfApellidos.getText().equals("") ||
            cbxestado_civil.getSelectedItem().equals("")||
-                tfDireccion_Actual.getText().equals("") ||
+                tfDia.getText().equals("") ||
                 tfE_Mail.getText().equals("") ||
                 tfTelefono.getText().equals("") ||
                 tfEdad.getText().equals("")){
@@ -102,7 +102,7 @@ FrmMantenimientoEmpleado frm;
         tfNombres.setText("");
         tfApellidos.setText("");
         cbxestado_civil.setSelectedItem("") ;
-        tfDireccion_Actual.setText("");
+        tfDia.setText("");
         tfE_Mail.setText("");
         tfTelefono.setText("");
         tfEdad.setText("");    
@@ -124,14 +124,14 @@ FrmMantenimientoEmpleado frm;
         jBNombres = new javax.swing.JButton();
         jBApellidos = new javax.swing.JButton();
         jBEstado_Civil = new javax.swing.JButton();
-        jBDireccion_Actual = new javax.swing.JButton();
+        jBDia = new javax.swing.JButton();
         jBE_Mail = new javax.swing.JButton();
         jBTelefono = new javax.swing.JButton();
         jBEdad = new javax.swing.JButton();
         tfId = new javax.swing.JTextField();
         tfNombres = new javax.swing.JTextField();
         tfApellidos = new javax.swing.JTextField();
-        tfDireccion_Actual = new javax.swing.JTextField();
+        tfDia = new javax.swing.JTextField();
         tfE_Mail = new javax.swing.JTextField();
         tfEdad = new javax.swing.JTextField();
         tfTelefono = new javax.swing.JTextField();
@@ -183,10 +183,10 @@ FrmMantenimientoEmpleado frm;
         jBEstado_Civil.setText("ESTADO_CIVIL :");
         getContentPane().add(jBEstado_Civil, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 280, 180, -1));
 
-        jBDireccion_Actual.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jBDireccion_Actual.setForeground(new java.awt.Color(0, 153, 153));
-        jBDireccion_Actual.setText("DIRECCION_ACTUAL :");
-        getContentPane().add(jBDireccion_Actual, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 330, 230, -1));
+        jBDia.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jBDia.setForeground(new java.awt.Color(0, 153, 153));
+        jBDia.setText("DIA:");
+        getContentPane().add(jBDia, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 330, 230, -1));
 
         jBE_Mail.setBackground(new java.awt.Color(255, 255, 255));
         jBE_Mail.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -242,14 +242,14 @@ FrmMantenimientoEmpleado frm;
         });
         getContentPane().add(tfApellidos, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 230, 150, -1));
 
-        tfDireccion_Actual.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        tfDireccion_Actual.setForeground(new java.awt.Color(0, 153, 153));
-        tfDireccion_Actual.addKeyListener(new java.awt.event.KeyAdapter() {
+        tfDia.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        tfDia.setForeground(new java.awt.Color(0, 153, 153));
+        tfDia.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
-                tfDireccion_ActualKeyTyped(evt);
+                tfDiaKeyTyped(evt);
             }
         });
-        getContentPane().add(tfDireccion_Actual, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 330, 150, -1));
+        getContentPane().add(tfDia, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 330, 150, -1));
 
         tfE_Mail.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         tfE_Mail.setForeground(new java.awt.Color(0, 153, 153));
@@ -378,7 +378,7 @@ FrmMantenimientoEmpleado frm;
             
             String estado_civil =cbxestado_civil.getSelectedItem().toString();
             
-            String direccion_actual = tfDireccion_Actual.getText();
+            String direccion_actual = tfDia.getText();
             String e_mail = tfE_Mail.getText();
             String telefono =tfTelefono.getText();
             
@@ -578,7 +578,7 @@ getToolkit().beep();//emite sonido
 }     
     }//GEN-LAST:event_tfApellidosKeyTyped
 
-    private void tfDireccion_ActualKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tfDireccion_ActualKeyTyped
+    private void tfDiaKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tfDiaKeyTyped
         // TODO add your handling code here:
           char car=evt.getKeyChar();
 
@@ -589,7 +589,7 @@ getToolkit().beep();//emite sonido
                     , "Solo se admiten Texto", "Validar Texto "
                     , JOptionPane.INFORMATION_MESSAGE);  
 }     
-    }//GEN-LAST:event_tfDireccion_ActualKeyTyped
+    }//GEN-LAST:event_tfDiaKeyTyped
 
     private void tfEdadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tfEdadActionPerformed
         // TODO add your handling code here:
@@ -659,7 +659,7 @@ public int print(Graphics graphics, PageFormat pageFormat, int pageIndex) throws
     private javax.swing.JButton cmdPrint;
     private javax.swing.JButton jBApellidos;
     private javax.swing.JButton jBDatos;
-    private javax.swing.JButton jBDireccion_Actual;
+    private javax.swing.JButton jBDia;
     private javax.swing.JButton jBE_Mail;
     private javax.swing.JButton jBEdad;
     private javax.swing.JButton jBEstado_Civil;
@@ -674,7 +674,7 @@ public int print(Graphics graphics, PageFormat pageFormat, int pageIndex) throws
     private javax.swing.JLabel jlhora;
     private javax.swing.JLabel lblfoto;
     private javax.swing.JTextField tfApellidos;
-    private javax.swing.JTextField tfDireccion_Actual;
+    private javax.swing.JTextField tfDia;
     private javax.swing.JTextField tfE_Mail;
     private javax.swing.JTextField tfEdad;
     private javax.swing.JTextField tfId;

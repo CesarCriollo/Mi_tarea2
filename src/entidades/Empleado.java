@@ -17,17 +17,19 @@ public class Empleado implements Serializable{
     private String nombres;
     private String apellidos;
     private String estado_civil;
-    private String direccion_actual;
+    //private String direccion_actual;
+    private String dia;
     private String e_mail;
     private String telefono;
     private int edad;
 
-    public Empleado(String id, String nombres, String apellidos,String estado_civil,String direccion_actual,String e_mail,String telefono, int edad) {
+    public Empleado(String id, String nombres, String apellidos,String estado_civil,String dia,String e_mail,String telefono, int edad) {
         this.id = id;
         this.nombres = nombres;
         this.apellidos = apellidos;
         this.estado_civil= estado_civil;
-        this.direccion_actual= direccion_actual;
+       // this.direccion_actual= direccion_actual;
+         this.telefono= dia;
         this.e_mail= e_mail;
         this.telefono= telefono;  
         this.edad = edad;
@@ -49,9 +51,9 @@ public class Empleado implements Serializable{
         this.estado_civil = estado_civil;
     }
 
-    public void setDireccion_actual(String direccion_actual) {
-        this.direccion_actual = direccion_actual;
-    }
+ //   public void setDireccion_actual(String direccion_actual) {
+   //     this.direccion_actual = direccion_actual;
+   // }
 
     public void setE_mail(String e_mail) {
         this.e_mail = e_mail;
@@ -81,9 +83,9 @@ public class Empleado implements Serializable{
         return estado_civil;
     }
 
-    public String getDireccion_actual() {
-        return direccion_actual;
-    }
+  //  public String getDireccion_actual() {
+   //     return direccion_actual;
+   // }
 
     public String getE_mail() {
         return e_mail;
@@ -97,6 +99,14 @@ public class Empleado implements Serializable{
         return edad;
     }
 
+    public String getDia() {
+        return dia;
+    }
+
+    public void setDia(String dia) {
+        this.dia = dia;
+    }
+
     
     
     
@@ -106,9 +116,11 @@ public class Empleado implements Serializable{
         System.out.println("nombres:"+nombres);
         System.out.println("apellidos:"+apellidos);
         System.out.println("estado_civil:"+estado_civil);
-        System.out.println("direccion_actual:"+direccion_actual);
+      //  System.out.println("direccion_actual:"+direccion_actual);
+        System.out.println("telefono:"+dia);
         System.out.println("e_mail:"+e_mail);
         System.out.println("telefono:"+telefono);
+       
         System.out.println("edad:"+edad);
     
     }

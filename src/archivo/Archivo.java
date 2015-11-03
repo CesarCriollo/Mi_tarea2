@@ -102,7 +102,7 @@ public class Archivo{
                     p.setNombres(tmp.getNombres());
                     p.setApellidos(tmp.getApellidos());
                     p.setEstado_civil(tmp.getEstado_civil());
-                    p.setDireccion_actual(tmp.getDireccion_actual());
+                    p.setDia(tmp.getDia());
                     p.setE_mail(tmp.getE_mail());
                     p.setTelefono(tmp.getTelefono());
                     
