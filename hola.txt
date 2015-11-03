@@ -2,6 +2,6 @@ e  modifica  un archivo add,  renmote push ,commit  , se actualiza  programa
 
 esta es  una  prueba de  git  a  netbeans
 
-
+cosas de casa nueva temporada 8
 prueba 4
 
