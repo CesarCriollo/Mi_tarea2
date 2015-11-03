@@ -1,0 +1,2 @@
+e  modifica  un archivo add,  renmote push ,commit  , se actualiza  programa
+
