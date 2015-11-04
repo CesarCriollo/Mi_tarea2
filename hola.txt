@@ -7,3 +7,4 @@ caasasa
 nueva
 hoy
 lunes
+miercoles, reunion del grupo para proyecto de Java Programing
