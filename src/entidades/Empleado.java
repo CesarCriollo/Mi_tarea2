@@ -23,7 +23,7 @@ public class Empleado implements Serializable{
     private String telefono;
     private int edad;
     private int direccion; //desde github a  NetBeans //cesar Criollo  
-    private int domicilio;
+    private int domicilio; //desde github a  NetBeans //cesar Criollo  
 
     public Empleado(String id, String nombres, String apellidos,String estado_civil,String dia,String e_mail,String telefono, int edad) {
         this.id = id;
@@ -35,16 +35,24 @@ public class Empleado implements Serializable{
         this.e_mail= e_mail;
         this.telefono= telefono;  
         this.edad = edad;
-        this.edad = direccion;
-        this.edad = domicilio;
+        this.direccion= direccion; //desde github a  NetBeans //cesar Criollo  
+        this.domicilio = domicilio; //desde github a  NetBeans //cesar Criollo  
     }
 
-    public int getDireccion() {
+    public int getDireccion() { //desde github a  NetBeans //cesar Criollo  
         return direccion;
     }
 
-    public void setDireccion(int direccion) {
+    public void setDireccion(int direccion) { //desde github a  NetBeans //cesar Criollo
         this.direccion = direccion;
+    }
+    
+      public int getDomicilio() { //desde github a  NetBeans //cesar Criollo  
+        return domicilio;
+    }
+
+    public void setDomicilio(int domicilio) { //desde github a  NetBeans //cesar Criollo
+        this.domicilio = domicilio;
     }
 
     public void setId(String id) {
@@ -134,7 +142,8 @@ public class Empleado implements Serializable{
         System.out.println("telefono:"+telefono);
        
         System.out.println("edad:"+edad);
-        System.out.println("edad:"+direccion);
+        System.out.println("edad:"+direccion); //desde github a  NetBeans //cesar Criollo
+        System.out.println("edad:"+domicilio); //desde github a  NetBeans //cesar Criollo
     
     }
     
