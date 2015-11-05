@@ -24,7 +24,7 @@ public class Empleado implements Serializable{
     private int edad;
     private int direccion; //desde github a  NetBeans //cesar Criollo  
     private int domicilio; //desde github a  NetBeans //cesar Criollo   
-    private String univerisdad; // Luis Piedra
+    private String universidad; // Luis Piedra
     
     
     //prueba
@@ -40,7 +40,16 @@ public class Empleado implements Serializable{
         this.telefono= telefono;  
         this.edad = edad;
         this.direccion= direccion; //desde github a  NetBeans //cesar Criollo  
-        this.domicilio = domicilio; //desde github a  NetBeans //cesar Criollo  
+        this.domicilio = domicilio; //desde github a  NetBeans //cesar Criollo 
+        this.universidad = universidad;
+    }
+
+    public void setUniversidad(String universidad) {  // Luis Piedra
+        this.universidad = universidad;
+    }
+
+    public String getUniversidad() {                  // Luis Piedra
+        return universidad;
     }
 
     public int getDireccion() { //desde github a  NetBeans //cesar Criollo  
