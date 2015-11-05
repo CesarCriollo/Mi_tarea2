@@ -159,5 +159,5 @@ public class Empleado implements Serializable{
         System.out.println("edad:"+domicilio); //desde github a  NetBeans //cesar Criollo
     
     }
-    
+    // hola soy yo Luis Piedra de git a netbeans.
 }
