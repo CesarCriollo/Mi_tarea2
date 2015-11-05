@@ -22,6 +22,8 @@ public class Empleado implements Serializable{
     private String e_mail;
     private String telefono;
     private int edad;
+    private int direccion;
+    
 
     public Empleado(String id, String nombres, String apellidos,String estado_civil,String dia,String e_mail,String telefono, int edad) {
         this.id = id;
@@ -33,6 +35,15 @@ public class Empleado implements Serializable{
         this.e_mail= e_mail;
         this.telefono= telefono;  
         this.edad = edad;
+        this.edad = direccion;
+    }
+
+    public int getDireccion() {
+        return direccion;
+    }
+
+    public void setDireccion(int direccion) {
+        this.direccion = direccion;
     }
 
     public void setId(String id) {
