@@ -23,7 +23,7 @@ public class Empleado implements Serializable{
     private String telefono;
     private int edad;
     private int direccion; //desde github a  NetBeans
-    
+    private int domicilio;
 
     public Empleado(String id, String nombres, String apellidos,String estado_civil,String dia,String e_mail,String telefono, int edad) {
         this.id = id;
@@ -36,6 +36,7 @@ public class Empleado implements Serializable{
         this.telefono= telefono;  
         this.edad = edad;
         this.edad = direccion;
+        this.edad = domicilio;
     }
 
     public int getDireccion() {
