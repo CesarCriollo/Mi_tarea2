@@ -23,7 +23,9 @@ public class Empleado implements Serializable{
     private String telefono;
     private int edad;
     private int direccion; //desde github a  NetBeans //cesar Criollo  
-    private int domicilio; //desde github a  NetBeans //cesar Criollo  
+    private int domicilio; //desde github a  NetBeans //cesar Criollo   
+    
+    //prueba
 
     public Empleado(String id, String nombres, String apellidos,String estado_civil,String dia,String e_mail,String telefono, int edad) {
         this.id = id;
