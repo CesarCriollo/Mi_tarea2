@@ -18,7 +18,7 @@ public class Empleado implements Serializable{
     private String apellidos;
     private String estado_civil;
     //private String direccion_actual;
-    private String dia; //cesar Criollo  cambie direccion actual  por  dia
+    private String dia; //cesar Criollo  cambie direccion actual  por  dia desde NetBeans a github
     private String e_mail;
     private String telefono;
     private int edad;
@@ -31,7 +31,7 @@ public class Empleado implements Serializable{
         this.apellidos = apellidos;
         this.estado_civil= estado_civil;
        // this.direccion_actual= direccion_actual;
-         this.dia= dia;//cesar Criollo  cambie direccion actual  por  dia
+         this.dia= dia;//cesar Criollo  cambie direccion actual  por  dia desde NetBeans a github
         this.e_mail= e_mail;
         this.telefono= telefono;  
         this.edad = edad;
@@ -111,11 +111,11 @@ public class Empleado implements Serializable{
         return edad;
     }
 
-    public String getDia() {//cesar Criollo  cambie direccion actual  por  dia
+    public String getDia() {//cesar Criollo  cambie direccion actual  por  dia desde NetBeans a github
         return dia;
     }
 
-    public void setDia(String dia) {//cesar Criollo  cambie direccion actual  por  dia
+    public void setDia(String dia) {//cesar Criollo  cambie direccion actual  por  dia desde NetBeans a github
         this.dia = dia;
     }
 
@@ -129,7 +129,7 @@ public class Empleado implements Serializable{
         System.out.println("apellidos:"+apellidos);
         System.out.println("estado_civil:"+estado_civil);
       //  System.out.println("direccion_actual:"+direccion_actual);
-        System.out.println("telefono:"+dia);//cesar Criollo  cambie direccion actual  por  dia
+        System.out.println("telefono:"+dia);//cesar Criollo  cambie direccion actual  por  dia desde NetBeans a github
         System.out.println("e_mail:"+e_mail);
         System.out.println("telefono:"+telefono);
        
