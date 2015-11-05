@@ -29,6 +29,7 @@ public class Empleado implements Serializable{
     
     //prueba
     // prueba desde  github a  netbeans 5
+    // hola soy yo Luis Piedra de git a netbeans.
     public Empleado(String id, String nombres, String apellidos,String estado_civil,String dia,String e_mail,String telefono, int edad) {
         this.id = id;
         this.nombres = nombres;
@@ -159,5 +160,5 @@ public class Empleado implements Serializable{
         System.out.println("edad:"+domicilio); //desde github a  NetBeans //cesar Criollo
     
     }
-    // hola soy yo Luis Piedra de git a netbeans.
+    
 }
