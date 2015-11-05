@@ -133,6 +133,7 @@ public class Empleado implements Serializable{
         System.out.println("telefono:"+telefono);
        
         System.out.println("edad:"+edad);
+        System.out.println("edad:"+direccion);
     
     }
     
